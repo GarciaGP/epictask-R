@@ -22,6 +22,7 @@ li {
 }
 
 body{
+	overflow: hidden;
 	height: 100vh;
 	background: linear-gradient(72.72deg, #4B0080 0.79%, #6F0080 100%);
 	font-family: Poppins;

@@ -1,0 +1,45 @@
+main.error {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.error::before {
+    content: '';
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background: linear-gradient(215.84deg, rgba(255, 113, 120, 0.8) 14.14%, rgba(255, 113, 120, 0) 88.11%);
+    border-radius: 50%;
+    right: -150px;
+    top: -100px
+}
+
+main.error .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+main.error::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: linear-gradient(215.84deg, rgba(255, 113, 120, 0.8) 14.14%, rgba(255, 113, 120, 0) 88.11%);
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-300px, -100px);
+}
+
+main.error .card h2 {
+    font-size: 1.8rem;
+}
+
+main.error .card p {
+    font-size: 1.2rem;
+    margin: 2rem 0 3rem 0;
+}
