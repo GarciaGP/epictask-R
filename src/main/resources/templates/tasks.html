@@ -42,7 +42,7 @@
 							</span>
 						</button>
 					</form>
-					<form th:if="${task.user == #authentication.getPrincipal()}" th:action="${'/task/release/' + task.id}" method="post">
+					<form th:if="${task.user != null && task.user.id == #authentication.getPrincipal().getId()}" th:action="${'/task/release/' + task.id}" method="post">
 						<button class="icon primary default" th:title="#{button.release}">
 							<span class="material-icons">
 								waving_hand

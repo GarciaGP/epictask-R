@@ -83,7 +83,7 @@ public class TaskController {
 	
 		User user = (User) auth.getPrincipal();
 		
-		if (task.getUser() != user)
+		if (!user.equals(task.getUser()))
 			throw new NotAllowedException("Essa tarefa não está atribuída para você");
 		
 		task.setUser(null);
